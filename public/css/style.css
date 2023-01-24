@@ -61,3 +61,7 @@ button {
 #resultSearch span {
     font-weight: bold;
 }
+
+.weather_icon {
+    width: 20px;
+}

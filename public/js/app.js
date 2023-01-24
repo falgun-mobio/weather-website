@@ -10,7 +10,7 @@ weatherForm.addEventListener('submit', (e) => {
             if (data.error) {
                 document.getElementById('resultSearch').innerHTML = '<p class="error-message">' + data.error + '</p>'
             } else {
-                const result = '<p><span>Weather:</span> ' + data.weather +'</p><p><span>Temperature:</span> ' + data.temperature + '</p><p><span>Location:</span> ' + data.location + '</p>'
+                const result = '<p><span>Weather:</span> ' + data.weather +'&nbsp<img class="weather_icon" src="'+ data.weather_icon +'"></p><p><span>Temperature:</span> ' + data.temperature + '&#8451;</p><p><span>Location:</span> ' + data.location + '</p>'
                 document.getElementById('resultSearch').innerHTML = result
             }
         })
